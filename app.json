@@ -1,24 +1,39 @@
 {
   "expo": {
-    "name": "JobCardTracker",
+    "name": "Garage Manager",
     "slug": "JobCardTracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.rangika.garagemanager",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#25272A",
+        "foregroundImage": "./assets/adaptive-icon.png"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Garage Manager to access your photos for vehicle pictures.",
+          "cameraPermission": "Allow Garage Manager to use the camera for vehicle pictures."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "22897902-cc10-4741-b746-741a46e594a3"
+      }
+    },
+    "owner": "auto-electricals-team"
   }
 }
